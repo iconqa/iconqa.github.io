@@ -11,14 +11,30 @@
 </head>
 <body>
     <div id="nav">
-        <div id="icon">Icon-QA</div>
+        <div id="icon">
+            <img src="res/knowledge-icon.png" id="nav-icon">
+            <p>Icon-QA</p>
+        </div>
         <div>
             <a class="nav-button" href="#about">About</a>
             <a class="nav-button" href="#overview">Overview</a>
-            <a class="nav-button" href="#paper">Paper</a>
-            <a class="nav-button" href="#citation">Citation</a>
             <a class="nav-button" href="index.html">Visualizations</a>
         </div>
+    </div>
+    <div id="banner" class="marquee">
+        <img src="res/fig2_more_examples-1.png" alt="bg" class="banner-img"/>
+    </div>
+    <div id="title">
+        <div id="title-wrapper">
+            <img src="res/knowledge-icon.png" id="title-icon">
+            <p id="title-text">Icon QA</p>
+        </div>
+        <p id="subtitle-text">
+            A New Benchmark for <br> 
+            Abstract Diagram Understanding and <br> 
+            Visual Language Reasoning
+        </p>
+        <a href="#about"><div id="scroller"></div></a>
     </div>
     <div id="body">
         <div class="section">
@@ -71,44 +87,6 @@
                     <canvas id="task-pie-chart"></canvas>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="section">
-            <div id="paper" class="anchor"></div>
-            <h1>Paper</h1>
-            <p>
-                <strong>
-                    Inter-GPS: <u>Inter</u>pretable <u>G</u>eometry <u>P</u>roblem <u>S</u>olving with Formal Language and Symbolic Reasoning
-                </strong><br>
-                Pan Lu<sup>*</sup>, Ran Gong<sup>*</sup>, Shibiao Jiang<sup>*</sup>, Liang Qiu, Siyuan Huang, Xiaodan Liang, Song-Chun Zhu<br>
-                The 59th Annual Meeting of the Association for Computational Linguistics (ACL), 2021<br>
-                <a href="https://arxiv.org/abs/2105.04165">Paper</a> /
-                <a href="http://lupantech.github.io/papers/acl21_intergps.pdf">PDF</a> /
-                <a href="https://github.com/lupantech/InterGPS">Code</a>
-            </p>
-            <p>
-                <a href="http://lupantech.github.io/papers/acl21_intergps.pdf">
-                    <img src="./res/paper_placeholder.png" style="width: 100%;">
-                </a>
-            </p>
-        </div>
-        <hr>
-        <div class="section">
-            <div id="citation" class="anchor"></div>
-            <h1>
-                Citation
-            </h1>
-            <p>
-                If the paper or the dataset inspires you, please cite us:
-            </p>
-            <p class="bibtax">
-                @inproceedings{lu2021inter,
-                <br>&emsp; title = {Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning},
-                <br>&emsp; author = {Lu, Pan and Gong, Ran and Jiang, Shibiao and Qiu, Liang and Huang, Siyuan and Liang, Xiaodan and Zhu, Song-Chun},
-                <br>&emsp; booktitle = {The 59th Annual Meeting of the Association for Computational Linguistics (ACL)},
-                <br>&emsp; year = {2021}
-                <br>}
-            </p>
         </div>
     </div>
 </body>
