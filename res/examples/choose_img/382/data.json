@@ -1,0 +1,12 @@
+{
+  "question": "What is at the top?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png",
+    "choice_2.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "grade1",
+  "label": "N2"
+}

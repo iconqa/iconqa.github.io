@@ -1,0 +1,14 @@
+{
+  "question": "How many squares are there?",
+  "choices": [
+    "4",
+    "8",
+    "6",
+    "3",
+    "7"
+  ],
+  "answer": 4,
+  "ques_type": "choose_txt",
+  "grade": "kindergarten",
+  "label": "C5"
+}

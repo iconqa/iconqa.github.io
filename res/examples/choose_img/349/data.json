@@ -1,0 +1,12 @@
+{
+  "question": "Select the picture that shows equal parts.",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png",
+    "choice_2.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "kindergarten",
+  "label": "O1"
+}

@@ -1,0 +1,11 @@
+{
+  "question": "What shape comes next?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 1,
+  "ques_type": "choose_img",
+  "grade": "kindergarten",
+  "label": "H4"
+}

@@ -1,0 +1,11 @@
+{
+  "question": "Which shape has a curved part?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 1,
+  "ques_type": "choose_img",
+  "grade": "kindergarten",
+  "label": "V8"
+}

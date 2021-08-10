@@ -1,0 +1,11 @@
+{
+  "question": "On which color is the spinner less likely to land?",
+  "choices": [
+    "yellow",
+    "white"
+  ],
+  "answer": 0,
+  "ques_type": "choose_txt",
+  "grade": "grade1",
+  "label": "S1"
+}

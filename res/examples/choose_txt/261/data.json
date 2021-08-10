@@ -1,0 +1,11 @@
+{
+  "question": "The clocks show two things Grace did Monday night. Which did Grace do later?",
+  "choices": [
+    "took a shower",
+    "talked on the phone"
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "grade2",
+  "label": "Q8"
+}

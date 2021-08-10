@@ -1,0 +1,14 @@
+{
+  "question": "How many turtles are there?",
+  "choices": [
+    "2",
+    "6",
+    "4",
+    "1",
+    "7"
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "grade1",
+  "label": "A1"
+}

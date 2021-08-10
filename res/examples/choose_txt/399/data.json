@@ -1,0 +1,13 @@
+{
+  "question": "If you select a marble without looking, how likely is it that you will pick a black one?",
+  "choices": [
+    "unlikely",
+    "probable",
+    "certain",
+    "impossible"
+  ],
+  "answer": 2,
+  "ques_type": "choose_txt",
+  "grade": "grade1",
+  "label": "S2"
+}

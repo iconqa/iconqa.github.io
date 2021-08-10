@@ -1,0 +1,12 @@
+{
+  "question": "The first picture is a moon. Which picture is tenth?",
+  "choices": [
+    "rocket",
+    "star",
+    "moon"
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "grade2",
+  "label": "C1"
+}

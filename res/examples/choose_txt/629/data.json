@@ -1,0 +1,12 @@
+{
+  "question": "The first picture is a tractor. Which picture is sixth?",
+  "choices": [
+    "tractor",
+    "sun",
+    "barn"
+  ],
+  "answer": 2,
+  "ques_type": "choose_txt",
+  "grade": "grade2",
+  "label": "C1"
+}

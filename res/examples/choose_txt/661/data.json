@@ -1,0 +1,12 @@
+{
+  "question": "How many flowers are there?",
+  "choices": [
+    "95",
+    "83",
+    "88"
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "kindergarten",
+  "label": "E3"
+}

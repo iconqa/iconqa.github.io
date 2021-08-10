@@ -1,0 +1,11 @@
+{
+  "question": "Which shape has more sides?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "grade1",
+  "label": "V5"
+}

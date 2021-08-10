@@ -1,0 +1,13 @@
+{
+  "question": "Which tool would help you put the correct amount of cornmeal in a recipe for cornbread?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png",
+    "choice_2.png",
+    "choice_3.png"
+  ],
+  "answer": 1,
+  "ques_type": "choose_img",
+  "grade": "grade2",
+  "label": "S13"
+}

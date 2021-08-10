@@ -1,0 +1,13 @@
+{
+  "question": "Which tool would you use to find out how long your hand is?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png",
+    "choice_2.png",
+    "choice_3.png"
+  ],
+  "answer": 3,
+  "ques_type": "choose_img",
+  "grade": "grade2",
+  "label": "S13"
+}

@@ -1,0 +1,12 @@
+{
+  "question": "What has been done to this letter?",
+  "choices": [
+    "flip",
+    "turn",
+    "slide"
+  ],
+  "answer": 2,
+  "ques_type": "choose_txt",
+  "grade": "grade2",
+  "label": "T6"
+}

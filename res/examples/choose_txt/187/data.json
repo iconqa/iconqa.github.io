@@ -1,0 +1,11 @@
+{
+  "question": "Luther is writing a letter one evening. The clock shows the time. What time is it?",
+  "choices": [
+    "6:00 A.M.",
+    "6:00 P.M."
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "grade2",
+  "label": "Q7"
+}

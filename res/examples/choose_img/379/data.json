@@ -1,0 +1,11 @@
+{
+  "question": "Which shape is a circle? ",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "prek",
+  "label": "K2"
+}

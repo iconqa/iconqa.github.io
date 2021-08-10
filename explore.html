@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="explore.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="index.js" defer></script>
+    <script src="res/examples/examples-meta.js"></script>
+    <script src="explore.js" defer></script>
+</head>
+<body>
+    <div id="nav">
+        <div id="icon">
+            <img src="res/knowledge-icon.png" id="nav-icon">
+            <p>Icon-QA</p>
+        </div>
+        <div>
+            <a class="nav-button" href="index.html#home">Home</a>
+            <a class="nav-button" href="index.html#about">About</a>
+            <a class="nav-button" href="index.html#overview">Overview</a>
+            <a class="nav-button" href="explore.html">Explore</a>
+            <a class="nav-button" href="index.html">Visualizations</a>
+        </div>
+    </div>
+    <div id="explore-body">
+        <div class="question-display">
+            <h1>Image-Choice MCQs</h1>
+            <div class="question-wrapper">
+                <p class="question" id="img-q"></p>
+                <img class="main-image" src="" id="img-img">
+                <p><strong>Choices</strong></p>
+                <div id="img-choices-wrapper"></div>
+            </div>
+            <input type="button" value=">>>" id="img-next">
+        </div>
+        <hr>
+        <div class="question-display">
+            <h1>Text-Choice MCQs</h1>
+            <div class="question-wrapper">
+                <p class="question" id="txt-q"></p>
+                <img class="main-image" src="" id="txt-img">
+            </div>
+            <input type="button" value=">>>" id="txt-next">
+        </div>
+        <hr>
+        <div class="question-display">
+            <h1>Fill-in-the-Blank Questions</h1>
+            <div class="question-wrapper">
+                <p class="question" id="blk-q"></p>
+                <img class="main-image" src="" id="blk-img">
+            </div>
+            <input type="button" value=">>>" id="blk-next">
+        </div>
+    </div>
+</body>
+</html>

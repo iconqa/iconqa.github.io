@@ -1,0 +1,11 @@
+{
+  "question": "The clocks show when some friends went out for ice cream Monday before bed. Who went out for ice cream later?",
+  "choices": [
+    "Nick",
+    "Anna"
+  ],
+  "answer": 0,
+  "ques_type": "choose_txt",
+  "grade": "grade1",
+  "label": "U7"
+}

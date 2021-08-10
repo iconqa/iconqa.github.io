@@ -1,0 +1,12 @@
+{
+  "question": "Which picture has symmetry?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png",
+    "choice_2.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "kindergarten",
+  "label": "V16"
+}

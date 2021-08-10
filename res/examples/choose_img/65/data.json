@@ -1,0 +1,11 @@
+{
+  "question": "Which figure has more faces?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 1,
+  "ques_type": "choose_img",
+  "grade": "grade2",
+  "label": "U4"
+}

@@ -1,0 +1,14 @@
+{
+  "question": "How many shapes are there?",
+  "choices": [
+    "8",
+    "7",
+    "6",
+    "5",
+    "10"
+  ],
+  "answer": 2,
+  "ques_type": "choose_txt",
+  "grade": "prek",
+  "label": "C6"
+}

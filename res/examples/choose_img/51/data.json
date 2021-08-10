@@ -1,0 +1,11 @@
+{
+  "question": "Count the bugs in this group. Which group has one more than the group you counted?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "kindergarten",
+  "label": "B13"
+}

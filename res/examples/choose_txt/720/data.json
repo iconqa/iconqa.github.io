@@ -1,0 +1,11 @@
+{
+  "question": "Are there enough straws for every cup?",
+  "choices": [
+    "no",
+    "yes"
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "prek",
+  "label": "E6"
+}

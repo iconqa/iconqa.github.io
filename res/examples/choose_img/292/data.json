@@ -1,0 +1,11 @@
+{
+  "question": "Which picture shows the dog outside the barn?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png"
+  ],
+  "answer": 1,
+  "ques_type": "choose_img",
+  "grade": "prek",
+  "label": "F1"
+}

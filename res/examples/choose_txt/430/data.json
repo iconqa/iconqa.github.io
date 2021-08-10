@@ -1,0 +1,12 @@
+{
+  "question": "The first picture is a sub. Which picture is fourth?",
+  "choices": [
+    "fish",
+    "turtle",
+    "sub"
+  ],
+  "answer": 1,
+  "ques_type": "choose_txt",
+  "grade": "kindergarten",
+  "label": "B18"
+}

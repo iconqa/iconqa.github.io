@@ -1,0 +1,14 @@
+{
+  "question": "Which object is next to the one shaped like a cube?",
+  "choices": [
+    "choice_0.png",
+    "choice_1.png",
+    "choice_2.png",
+    "choice_3.png",
+    "choice_4.png"
+  ],
+  "answer": 0,
+  "ques_type": "choose_img",
+  "grade": "kindergarten",
+  "label": "N8"
+}
