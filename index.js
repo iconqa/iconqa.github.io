@@ -1,3 +1,4 @@
+// smooth scrolling effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,6 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// https://www.chartjs.org/docs/latest/charts/doughnut.html#pie
 const data = {
     labels: [
         'Image MCQ',
@@ -22,12 +24,15 @@ const data = {
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
         ],
-        hoverOffset: 10
+        // pop when hovered
+        // https://www.chartjs.org/docs/latest/charts/doughnut.html#interactions
+        hoverOffset: 10 
     }]
 };
 const config = {
     type: 'pie',
     data: data,
+    // makes sure the chart doesn't get clipped when a section is hovered.
     options: {
         layout: {
             padding: {
@@ -38,6 +43,7 @@ const config = {
         },
     }
 };
+//  painting the chart onto the webpage.
 var myChart = new Chart(
     document.getElementById('task-pie-chart'),
     config

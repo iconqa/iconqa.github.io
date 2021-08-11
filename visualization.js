@@ -1,13 +1,5 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
+// https://www.chartjs.org/docs/latest/
+// task distribution chart
 const task_data = {
     labels: [
         'Image MCQ',
@@ -35,6 +27,7 @@ const task_config = {
                 position: "right"
             }
         },
+        // make sure the chart doesn't get clipped on the left
         layout: {
             padding: {
                left: 25 
@@ -48,6 +41,7 @@ var myChart = new Chart(
 );
 
 
+// subject distribution chart
 var labels = [
     'Geometry',
     'Counting',
@@ -64,6 +58,8 @@ var labels = [
     'Probability'
 ];
 var data = [40.5, 34.9, 13.8, 9.8, 9.2, 8.5, 8.3, 7.3, 7.1, 7.1, 6.0, 5.3, 4.9];
+// d3 is a library that creates data schemes for charts
+// https://github.com/d3/d3-scale-chromatic
 var colors = [];
 for (let i = 0; i < data.length; i++) {
     colors.push(d3.interpolateTurbo(1 - i / data.length));
