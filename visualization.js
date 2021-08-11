@@ -22,12 +22,25 @@ const task_data = {
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
         ],
-        hoverOffset: 4
+        hoverOffset: 10
     }]
 };
 const task_config = {
     type: 'pie',
     data: task_data,
+    options: {
+        plugins: {
+            legend: {
+                display: true,
+                position: "right"
+            }
+        },
+        layout: {
+            padding: {
+               left: 25 
+            }
+        },
+    }
 };
 var myChart = new Chart(
     document.getElementById('task-pie-chart'),
@@ -62,7 +75,7 @@ const subject_data = {
         label: 'Subject Distr.',
         data: data,
         backgroundColor: colors,
-        hoverOffset: 4
+        hoverOffset: 10
     }]
 };
 const subject_config = {
@@ -71,9 +84,15 @@ const subject_config = {
     options: {
         plugins: {
             legend: {
-                display: true
+                display: true,
+                position: "right"
             }
-        }
+        },
+        layout: {
+            padding: {
+               left: 25 
+            }
+        },
     }
 };
 var myChart = new Chart(

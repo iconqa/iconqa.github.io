@@ -28,41 +28,28 @@
     </div>
     <div id="body">
         <div class="section">
-            <div class="col">
-                <canvas id="task-pie-chart" class="visual"></canvas>
-            </div>
-            <div class="col">
-                <ul>
-                    <li>57,672 image choice MC questions</li>
-                    <li>31,578 text choice MC questions</li>
-                    <li>18,189 fill-in-the-blank questions</li>
-                </ul>
+            <div class="col-wrapper">
+                <div class="col">
+                    <h1>Task Distribution</h1>
+                    <canvas id="task-pie-chart" class="visual"></canvas>
+                </div>
+                <div class="col">
+                    <h1>Subject Distribution</h1>
+                    <canvas id="subject-pie-chart" class="visual"></canvas>
+                </div>
+
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <div class="section">
-            <div class="col">
-                <canvas id="subject-pie-chart" class="visual"></canvas>
-            </div>
-            <div class="col">
-                <ul id="subject-ul">
-                    <li>Geometry</li>
-                    <li>Counting</li>
-                    <li>Comparing</li>
-                    <li>Spatial</li>
-                    <li>Scene</li>
-                    <li>Pattern</li>
-                    <li>Time</li>
-                    <li>Fraction</li>
-                    <li>Estimation</li>
-                    <li>Algebra</li>
-                    <li>Measurement</li>
-                    <li>Commonsense</li>
-                    <li>Probability</li>
-                </ul>
+            <h1>Top 3 Words in Questions</h1>
+            <div class="col-wrapper">
+                <div class="col">
+                    <img src="res/three-word-pie.png" id="three-word-pie">
+                </div>
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
     </div>
     <div id="footer">
         © 2021 Center for Vision, Cognition, Learning, and Autonomy at UCLA

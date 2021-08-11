@@ -42,6 +42,12 @@ input[type=button] {
 input[type=button]:hover {
     background: var(--UCLA-gold);
 }
+h1 {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
 
 .anchor {
     position: relative;
@@ -107,23 +113,29 @@ input[type=button]:hover {
 .section {
     width: 60%;
     margin: auto;
-    padding: 50px 0;
+    padding: 20px 0;
+}
+.col-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .col {
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .visual {
-    max-width: 70%;
+    /* max-width: 70%; */
 }
 #subject-ul {
     columns: 2;
+}
+#three-word-pie {
+    width: 100%;
 }

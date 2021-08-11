@@ -25,8 +25,8 @@ hr {
     color: silver;
     opacity: 0.5;
 }
-h1 {
-    /* font-size: 2.5em; */
+img {
+    max-width: 100%;
 }
 ul {
     margin: 0;
@@ -61,6 +61,9 @@ tbody tr:nth-of-type(even) {
 
 tbody tr:last-of-type {
     border-bottom: 2px solid var(--UCLA-darkblue);
+}
+strong {
+    
 }
 
 .anchor {
@@ -143,17 +146,17 @@ tbody tr:last-of-type {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - var(--nav-height));
+    height: calc(50vh - var(--nav-height));
     width: 100vw;
     left: 0vw;
     font-weight: bold;
     color: white;
-    background: linear-gradient(to bottom, var(--nav-darkblue), var(--UCLA-blue));
-    /* background: linear-gradient(to bottom, white); */
-    /* background: linear-gradient(to bottom, var(--UCLA-darkblue), var(--UCLA-blue) 60%, white); */
+    /* background: linear-gradient(to bottom, var(--nav-darkblue), var(--UCLA-blue)); */
+    background: linear-gradient(180deg, var(--nav-darkblue), var(--UCLA-blue));
+    /* background: linear-gradient(, var(--UCLA-darkblue), var(--UCLA-blue) 60%, white); */
 }
 #title-icon {
-    width: 5em;
+    width: 3em;
     margin: 10px;
 }
 #title-wrapper {
@@ -163,7 +166,7 @@ tbody tr:last-of-type {
     align-items: center;
 }
 #title-text {
-    font-size: 5em;
+    font-size: 3em;
 }
 #subtitle-text {
     font-size: 1em;
@@ -173,7 +176,7 @@ tbody tr:last-of-type {
     color: white;
 }
 #title-padding-bottom {
-    font-size: 3em;
+    font-size: 1.5em;
 }
 #scroller::after {
     animation: bounce 2s ease infinite;
@@ -267,13 +270,14 @@ tbody tr:last-of-type {
     width: 20vw;
     height: 20vw;
 }
-.bibtax {
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.col-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    width: 48%;
 }
 
 /* .marquee img {
