@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="main.css"> -->
     <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="nav.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
     <script src="index.js" defer></script>
     <script src="res/examples/examples-meta.js"></script>
@@ -22,12 +23,14 @@
             <a class="nav-button" href="index.html#home">Home</a>
             <a class="nav-button" href="index.html#about">About</a>
             <a class="nav-button" href="index.html#overview">Overview</a>
+            <a class="nav-button" href="index.html#icon645">Icon-645</a>
             <a class="nav-button" href="explore.html">Explore</a>
             <a class="nav-button" href="visualization.html">Visualizations</a>
         </div>
     </div>
     <div id="explore-body">
         <div class="question-display">
+            <!-- section title includes both the title and the navigation buttons -->
             <div class="section-title">
                 <h1>Image-Choice MCQs</h1>
                 <div>
@@ -35,6 +38,7 @@
                     <input type="button" value=">>>" id="img-next">
                 </div>
             </div>
+            <!-- class make-cols makes its children columns of the same row -->
             <div class="make-cols">
                 <div class="question-wrapper col">
                     <p class="question" id="img-q"></p>
@@ -57,6 +61,7 @@
                     <input type="button" value=">>>" id="txt-next">
                 </div>
             </div>
+            
             <div class="make-cols">
                 <div class="question-wrapper col">
                     <p class="question" id="txt-q"></p>

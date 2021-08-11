@@ -1,3 +1,4 @@
+/* some constants used throughout the website*/
 :root {
     --nav-font: Arial, Helvetica, sans-serif; 
     --nav-height: 8vh;
@@ -6,10 +7,11 @@
     --UCLA-darkblue: #003B5C;
     --nav-darkblue: #05004a;
 }
+
+/* styled tags that look decent */
 html {
     overflow-x: hidden;
     font-family: var(--nav-font);
-    /* font-size: 1.2em; */
 }
 body {
     margin: 0;
@@ -34,6 +36,8 @@ ul {
 li {
     margin-top: 15px;
 }
+
+/* for the nice table on the home page */
 table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -41,7 +45,6 @@ table {
     font-family: sans-serif;
     width: 30vw;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    /* margin: auto; */
 }
 thead tr {
     background-color: var(--UCLA-darkblue);
@@ -62,10 +65,13 @@ tbody tr:nth-of-type(even) {
 tbody tr:last-of-type {
     border-bottom: 2px solid var(--UCLA-darkblue);
 }
+
+/* used only once on the home page */
 strong {
     color: var(--UCLA-blue);
 }
 
+/* anchor tag for nav button scrolling */
 .anchor {
     position: relative;
     display: block;
@@ -74,72 +80,8 @@ strong {
     height: 1px;
 }
 
-#nav {
-    width: 96%;
-    height: var(--nav-height);
-    background-color: var(--nav-darkblue);
-    position: fixed;
-    top:0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2vw;
-    opacity: 1;
-    /* border-bottom: 1px solid blue; */
-}
-#icon {
-    font-size: 1.5em;
-    font-family: var(--nav-font);
-    font-weight: 700;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-button {
-    margin-left: 20px;
-    font-family: var(--nav-font);
-    color: white;
-}
-.nav-button:hover {
-    color: var(--UCLA-gold);
-}
-#nav-icon {
-    width: 1em;
-    margin: 5px;
-}
-#footer {
-    width: 100%;
-    height: var(--nav-height);
-    background-color: var(--nav-darkblue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    font-size: 0.5em;
-    color: grey;
-}
 
-
-#banner {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: var(--nav-height);
-    height: calc(100vh - var(--nav-height));
-    width: 80vw;
-    left: 10vw;
-    /* -webkit-mask:linear-gradient(to left,transparent, #fff 10%,transparent 30%, transparent 70%, #fff 90%, transparent);
-    mask:linear-gradient(to left,transparent, #fff 10%,transparent 30%, transparent 70%, #fff 90%, transparent); */
-    margin-bottom: 40px;
-}
-.banner-img {
-    height: 100%;
-    position: absolute;
-
-}
+/* the banner */
 #title {
     margin-top: var(--nav-height);
     display: flex;
@@ -159,6 +101,7 @@ strong {
     width: 3em;
     margin: 10px;
 }
+/* used to center the title */
 #title-wrapper {
     display: flex;
     flex-direction: row;
@@ -172,44 +115,13 @@ strong {
     font-size: 1em;
     text-align: center;
 }
-.subtitle-highlights {
-    color: white;
-}
+
+/* change this to adjust the vertical position of the title*/
 #title-padding-bottom {
     font-size: 1.5em;
 }
-#scroller::after {
-    animation: bounce 2s ease infinite;
-    color: white;
-    content: '\21C3';
-    font-size: 2rem;
-    position: absolute;
-    height: 4rem;
-    bottom: 0rem;
-    left: 50%;
-    letter-spacing: -1px;
-    line-height: 4rem;
-    margin-left: -3rem;
-    opacity: 0.8;
-    text-align: center;
-    width: 6rem;
-    font-weight: lighter;
-}
 
-@keyframes bounce {
-    50% {
-        transform: translateY(-20%);
-    }
-}
-
-#transition {
-    height: 30vh;
-    width: 100vw;
-    left: 0;
-    background: linear-gradient(to bottom, var(--UCLA-blue), white);
-}
-
-
+/* body of the page */
 #body {
     width: 60vw;
     margin: auto;
@@ -221,6 +133,7 @@ strong {
     margin-bottom: 60px;
 }
 
+/* shows three examples on the home page */
 #example-box {
     display: flex;
     flex-direction: row;
@@ -232,6 +145,7 @@ strong {
     width: 15vw;
 }
 
+/* makes its children independent columns on the same row */
 #overview-content-wrapper {
     display: flex;
     flex-direction: row;
@@ -241,10 +155,8 @@ strong {
 #overview-left {
     width: 30vw;
 }
-/* #overview-right {
-    width: 20vw;
-    height: 20vw;
-} */
+
+/* not very important. Tried to make the website responsive */
 @media only screen and (max-width: 1000px) {
     #body {
         padding: 0;
@@ -266,6 +178,7 @@ strong {
         display: none;
     }
 }
+
 #task-pie-chart {
     width: 20vw;
     height: 20vw;
@@ -279,14 +192,3 @@ strong {
 .col {
     width: 48%;
 }
-
-/* .marquee img {
-    animation: marquee 60s linear infinite;
-}
-@keyframes marquee {
-    0%  { transform: translate(0, 0);}
-    25% { transform: translate(10vw, 0); }
-    50% { transform: translate(0, 0);}
-    75% { transform: translate(-10vw, 0); }
-    100% { transform: translate(0, 0); }
-} */

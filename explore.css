@@ -1,3 +1,4 @@
+/* same old constants and tag styling */
 :root {
     --nav-font: Arial, Helvetica, sans-serif; 
     --nav-height: 8vh;
@@ -32,6 +33,7 @@ li {
     margin-top: 15px;
 }
 
+/* next/prev button styling */
 input[type=button] {
     cursor: pointer;
     background: white;
@@ -41,62 +43,6 @@ input[type=button] {
 }
 input[type=button]:hover {
     background: var(--UCLA-gold);
-}
-
-.anchor {
-    position: relative;
-    display: block;
-    /* visibility: hidden; */
-    top: calc(-1 * var(--nav-height));
-    height: 1px;
-}
-
-#nav {
-    width: 96%;
-    height: var(--nav-height);
-    background-color: var(--nav-darkblue);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2vw;
-    opacity: 1;
-    /* border-bottom: 1px solid blue; */
-}
-#icon {
-    font-size: 1.5em;
-    font-family: var(--nav-font);
-    font-weight: 700;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-button {
-    margin-left: 20px;
-    font-family: var(--nav-font);
-    color: white;
-}
-.nav-button:hover {
-    color:var(--UCLA-gold);
-}
-#nav-icon {
-    width: 1em;
-    margin: 5px;
-}
-#footer {
-    width: 100%;
-    height: var(--nav-height);
-    background-color: var(--nav-darkblue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    font-size: 0.5em;
-    color: grey;
 }
 
 #explore-body {
@@ -129,7 +75,6 @@ input[type=button]:hover {
     justify-content: start;
     align-items: flex-start;
 }
-
 
 .question-wrapper {
     width: 50%;
@@ -168,7 +113,9 @@ input[type=button]:hover {
     justify-content: center;
 }
 
+/* json-display */
 .json-display {
+    /* make it line up with the right side of the div */
     width: calc(100% - 1em - 1px);   
 }
 .bibtax {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="index.js" defer></script>
 </head>
@@ -19,14 +20,16 @@
             <a class="nav-button" href="#home">Home</a>
             <a class="nav-button" href="#about">About</a>
             <a class="nav-button" href="#overview">Overview</a>
+            <a class="nav-button" href="#icon645">Icon-645</a>
             <a class="nav-button" href="explore.html">Explore</a>
             <a class="nav-button" href="visualization.html">Visualizations</a>
         </div>
     </div>
-    <!-- <div id="banner" class="marquee">
-        <img src="res/fig2_more_examples-1.png" alt="bg" class="banner-img"/>
-    </div> -->
+
+    <!-- anchor for the home button -->
     <div id="home" style="position: absolute; top: 0;"></div>
+
+    <!-- banner -->
     <div id="title">
         <div id="title-wrapper">
             <img src="res/knowledge-icon.png" id="title-icon">
@@ -37,10 +40,13 @@
             Abstract Diagram Understanding and <br> 
             Visual Language Reasoning
         </p>
+        <!-- raise the title and subtitle up a little bit -->
         <p id="title-padding-bottom">&nbsp;</p>
-        <!-- <a href="#about"><div id="scroller"></div></a> -->
     </div>
-    <!-- <div id="transition"></div> -->
+
+
+    <!-- the main body of the page -->
+    <!-- each section uses an empty div as an anchor -->
     <div id="body">
         <div class="section">
             <div id="about" class="anchor"></div>
@@ -95,7 +101,7 @@
         </div>
         <hr>
         <div class="section">
-            <div id="Icon-645" class="anchor"></div>
+            <div id="icon645" class="anchor"></div>
             <h1>Icon-645</h1>
             <div class="col-wrapper">
                 <div class="col">
@@ -113,6 +119,8 @@
             </div>
         </div>
     </div>
+
+    <!-- footer -->
     <div id="footer">
         © 2021 Center for Vision, Cognition, Learning, and Autonomy at UCLA
     </div>
