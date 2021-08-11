@@ -76,6 +76,7 @@ tbody tr:last-of-type {
     height: var(--nav-height);
     background-color: var(--nav-darkblue);
     position: fixed;
+    top:0;
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -105,6 +106,17 @@ tbody tr:last-of-type {
     width: 1em;
     margin: 5px;
 }
+#footer {
+    width: 100%;
+    height: var(--nav-height);
+    background-color: var(--nav-darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-size: 0.5em;
+    color: grey;
+}
 
 
 #banner {
@@ -126,12 +138,11 @@ tbody tr:last-of-type {
 
 }
 #title {
-    position: absolute;
+    margin-top: var(--nav-height);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: var(--nav-height);
     height: calc(100vh - var(--nav-height));
     width: 100vw;
     left: 0vw;
@@ -189,8 +200,6 @@ tbody tr:last-of-type {
 }
 
 #transition {
-    position: absolute;
-    top: 100vh;
     height: 30vh;
     width: 100vw;
     left: 0;
@@ -199,10 +208,8 @@ tbody tr:last-of-type {
 
 
 #body {
-    position: absolute;
     width: 60vw;
-    left: 20vw;
-    top: 130vh;
+    margin: auto;
 }
 
 .section {

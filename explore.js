@@ -5,26 +5,45 @@ var img_q = document.getElementById("img-q");
 var txt_q = document.getElementById("txt-q");
 var blk_q = document.getElementById("blk-q");
 var img_choices_wrapper = document.getElementById("img-choices-wrapper");
+var img_json = document.getElementById("img-json");
+var txt_choices_wrapper = document.getElementById("txt-choices-wrapper");
+var txt_json = document.getElementById("txt-json");
+var blk_json = document.getElementById("blk-json");
 
-const update_q = (type, id) => {
+function update_q(type, id) {
     if (type === "img") {
         img_img.src = CHOOSE_IMAGE_LS[id].path + "/image.png";
         img_q.innerHTML = "<strong>Question: </strong>" + CHOOSE_IMAGE_LS[id].question;
         img_choices_wrapper.innerHTML = create_img_choices(id);
+        var displayed_data = (({question, choices, answer, ques_type, grade, label}) => ({question, choices, answer, ques_type, grade, label}))(CHOOSE_IMAGE_LS[id]);
+        img_json.innerText = JSON.stringify(displayed_data, null, 4);
     } else if (type === "txt") {
         txt_img.src = CHOOSE_TEXT_LS[id].path + "/image.png";
         txt_q.innerHTML = "<strong>Question: </strong>" + CHOOSE_TEXT_LS[id].question;
+        txt_choices_wrapper.innerHTML = create_txt_choices(id);
+        var displayed_data = (({question, choices, answer, ques_type, grade, label}) => ({question, choices, answer, ques_type, grade, label}))(CHOOSE_TEXT_LS[id]);
+        txt_json.innerText = JSON.stringify(displayed_data, null, 4);
     } else {
         blk_img.src = FILL_IN_BLANK_LS[id].path + "/image.png";
-        blk_q.innerHTML = "<strong>Question: </strong>" + FILL_IN_BLANK_LS[id].question
+        blk_q.innerHTML = "<strong>Question: </strong>" + FILL_IN_BLANK_LS[id].question;
+        var displayed_data = (({question, choices, answer, ques_type, grade, label}) => ({question, choices, answer, ques_type, grade, label}))(FILL_IN_BLANK_LS[id]);
+        blk_json.innerText = JSON.stringify(displayed_data, null, 4);
     }
 }
 
-const create_img_choices = (id) => {
+function create_img_choices(id) {
     var str = "";
     for (let i = 0; i < CHOOSE_IMAGE_LS[id].choices.length; i++) {
         path = CHOOSE_IMAGE_LS[id].path + "/" + CHOOSE_IMAGE_LS[id].choices[i];
         str += `<img class="img-choice" src="${path}">`;
+    }
+    return str;
+}
+
+function create_txt_choices(id) {
+    var str = "";
+    for (let i = 0; i < CHOOSE_TEXT_LS[id].choices.length; i++) {
+        str += `<div class="txt-choice"> ${CHOOSE_TEXT_LS[id].choices[i]} </div>`;
     }
     return str;
 }
@@ -38,32 +57,49 @@ update_q("txt", txt_id);
 update_q("blk", blk_id);
 
 var img_next = document.getElementById("img-next");
+var img_prev = document.getElementById("img-prev");
 img_next.addEventListener("click", () => {
     img_id++;
     if (img_id >= CHOOSE_IMAGE_LS.length)
         img_id = 0;
     update_q("img", img_id);
 });
+img_prev.addEventListener("click", () => {
+    img_id--;
+    if (img_id < 0)
+        img_id = CHOOSE_IMAGE_LS.length-1;
+    update_q("img", img_id);
+});
 
 var txt_next = document.getElementById("txt-next");
+var txt_prev = document.getElementById("txt-prev");
 txt_next.addEventListener("click", () => {
     txt_id++;
     if (txt_id >= CHOOSE_TEXT_LS.length)
         txt_id = 0;
     update_q("txt", txt_id);
 });
+txt_prev.addEventListener("click", () => {
+    txt_id--;
+    if (txt_id <0)
+        txt_id = CHOOSE_TEXT_LS.length - 1;
+    update_q("txt", txt_id);
+});
 
 var blk_next = document.getElementById("blk-next");
+var blk_prev = document.getElementById("blk-prev");
 blk_next.addEventListener("click", () => {
     blk_id++;
     if (blk_id >= FILL_IN_BLANK_LS.length)
         blk_id = 0;
     update_q("blk", blk_id);
 });
+blk_prev.addEventListener("click", () => {
+    blk_id--;
+    if (blk_id < 0)
+        blk_id =  FILL_IN_BLANK_LS.length - 1;
+    update_q("blk", blk_id);
+});
 
-
-////////////////////////
-// Layout choose_img
-//////////////////////// 
 
 

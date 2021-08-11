@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="visualization.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="visualization.js" defer></script>
+</head>
+<body>
+    <div id="nav">
+        <div id="icon">
+            <img src="res/knowledge-icon.png" id="nav-icon">
+            <p>Icon-QA</p>
+        </div>
+        <div>
+            <a class="nav-button" href="index.html#home">Home</a>
+            <a class="nav-button" href="index.html#about">About</a>
+            <a class="nav-button" href="index.html#overview">Overview</a>
+            <a class="nav-button" href="explore.html">Explore</a>
+            <a class="nav-button" href="visualization.html">Visualizations</a>
+        </div>
+    </div>
+    <div id="body">
+        <div class="section">
+            <div class="col">
+                <canvas id="task-pie-chart" class="visual"></canvas>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>57,672 image choice MC questions</li>
+                    <li>31,578 text choice MC questions</li>
+                    <li>18,189 fill-in-the-blank questions</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="section">
+            <div class="col">
+                <canvas id="subject-pie-chart" class="visual"></canvas>
+            </div>
+            <div class="col">
+                <ul id="subject-ul">
+                    <li>Geometry</li>
+                    <li>Counting</li>
+                    <li>Comparing</li>
+                    <li>Spatial</li>
+                    <li>Scene</li>
+                    <li>Pattern</li>
+                    <li>Time</li>
+                    <li>Fraction</li>
+                    <li>Estimation</li>
+                    <li>Algebra</li>
+                    <li>Measurement</li>
+                    <li>Commonsense</li>
+                    <li>Probability</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div id="footer">
+        © 2021 Center for Vision, Cognition, Learning, and Autonomy at UCLA
+    </div>
+</body>
+</html>
