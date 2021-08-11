@@ -63,7 +63,7 @@ tbody tr:last-of-type {
     border-bottom: 2px solid var(--UCLA-darkblue);
 }
 strong {
-    
+    color: var(--UCLA-blue);
 }
 
 .anchor {
