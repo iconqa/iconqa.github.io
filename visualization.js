@@ -24,7 +24,12 @@ const task_config = {
         plugins: {
             legend: {
                 display: true,
-                position: "right"
+                position: "right",
+                labels: {
+                    font: {
+                        size: 20
+                    }
+                }
             }
         },
         // make sure the chart doesn't get clipped on the left
@@ -41,7 +46,7 @@ var myChart = new Chart(
 );
 
 
-// subject distribution chart
+// skill distribution chart
 var labels = [
     'Geometry',
     'Counting',
@@ -65,23 +70,28 @@ for (let i = 0; i < data.length; i++) {
     colors.push(d3.interpolateTurbo(1 - i / data.length));
 }
 
-const subject_data = {
+const skill_data = {
     labels: labels,
     datasets: [{
-        label: 'Subject Distr.',
+        label: 'Skill Distr.',
         data: data,
         backgroundColor: colors,
         hoverOffset: 10
     }]
 };
-const subject_config = {
+const skill_config = {
     type: 'pie',
-    data: subject_data,
+    data: skill_data,
     options: {
         plugins: {
             legend: {
                 display: true,
-                position: "right"
+                position: "right",
+                labels: {
+                    font: {
+                        size: 20
+                    }
+                }
             }
         },
         layout: {
@@ -92,6 +102,6 @@ const subject_config = {
     }
 };
 var myChart = new Chart(
-    document.getElementById('subject-pie-chart'),
-    subject_config
+    document.getElementById('skill-pie-chart'),
+    skill_config
 );

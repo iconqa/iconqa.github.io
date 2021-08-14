@@ -30,24 +30,46 @@
     </div>
     <div id="body">
         <div class="section">
+            <h1>Task Distribution</h1>
             <div class="col-wrapper">
                 <div class="col">
-                    <h1>Task Distribution</h1>
                     <canvas id="task-pie-chart" class="visual"></canvas>
                 </div>
                 <div class="col">
-                    <h1>Subject Distribution</h1>
-                    <canvas id="subject-pie-chart" class="visual"></canvas>
+                    The Icon-QA dataset consists of 3 different tasks:
+                    <ul>
+                        <li>Image MCQ: choose from 2-5 image choices</li>
+                        <li>Text MCQ: choose from 2-5 text choices</li>
+                        <li>Fill-in-the-blank: short textual answers</li>
+                    </ul>
                 </div>
-
             </div>
         </div>
+        <div class="section">
+            <h1>Skill Distribution</h1>
+            <div class="col-wrapper">
+                <div class="col">
+                    The Icon-QA dataset involves questions that require a variety of 
+                    perceptual and cognitive skills.
+                </div>
+                <div class="col">
+                    <canvas id="skill-pie-chart" class="visual"></canvas>
+                </div>
+            </div>
+        </div>
+
         <!-- <hr> -->
         <div class="section">
             <h1>Top 3 Words in Questions</h1>
             <div class="col-wrapper">
                 <div class="col">
                     <img src="res/three-word-pie.png" id="three-word-pie">
+                </div>
+                <div class="col">
+                    <p>
+                        The chart on the left shows the most common three-word combinations 
+                        that start the sentences.
+                    </p>
                 </div>
             </div>
         </div>
