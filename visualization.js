@@ -89,8 +89,8 @@ const skill_config = {
                 position: "right",
                 labels: {
                     font: {
-                        size: 20
-                    }
+                        size: 15
+                    },
                 }
             }
         },
