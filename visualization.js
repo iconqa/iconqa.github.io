@@ -1,5 +1,10 @@
 // https://www.chartjs.org/docs/latest/
 // task distribution chart
+var data = [57672, 31578, 18189];
+var colors = [];
+for (let i = 0; i < data.length; i++) {
+    colors.push(d3.interpolateTurbo(1 - i / data.length));
+}
 const task_data = {
     labels: [
         'Image MCQ',
@@ -8,12 +13,8 @@ const task_data = {
     ],
     datasets: [{
         label: 'Task Distr.',
-        data: [57672, 31578, 18189],
-        backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
-        ],
+        data: data,
+        backgroundColor: colors,
         hoverOffset: 10
     }]
 };
@@ -27,15 +28,15 @@ const task_config = {
                 position: "right",
                 labels: {
                     font: {
-                        size: 20
+                        size: 15
                     }
                 }
-            }
+            },
         },
         // make sure the chart doesn't get clipped on the left
         layout: {
             padding: {
-               left: 25 
+               left: 10,
             }
         },
     }
@@ -60,7 +61,7 @@ var labels = [
     'Algebra',
     'Measurement', 
     'Common Sense',
-    'Probability'
+    'Probability',
 ];
 var data = [40.5, 34.9, 13.8, 9.8, 9.2, 8.5, 8.3, 7.3, 7.1, 7.1, 6.0, 5.3, 4.9];
 // d3 is a library that creates data schemes for charts
@@ -96,7 +97,7 @@ const skill_config = {
         },
         layout: {
             padding: {
-               left: 25 
+               left: 10
             }
         },
     }
