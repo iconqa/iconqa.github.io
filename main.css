@@ -130,30 +130,34 @@ strong {
 .section {
     width: calc(100% - 20px);
     padding: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 /* shows three examples on the home page */
 #example-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .example-img {
     width: 15vw;
 }
 
 /* makes its children independent columns on the same row */
-#overview-content-wrapper {
+.makecol {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 #overview-left {
-    width: 30vw;
+    width: 50%;
+}
+#overview-right {
+    width: 40%;
 }
 
 /* not very important. Tried to make the website responsive */
@@ -179,10 +183,9 @@ strong {
     }
 }
 
-#task-pie-chart {
-    width: 20vw;
-    height: 20vw;
-}
+/* #task-pie-chart {
+    
+} */
 .col-wrapper {
     display: flex;
     flex-direction: row;
@@ -191,4 +194,19 @@ strong {
 }
 .col {
     width: 48%;
+}
+
+.bibtax {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.ext-link {
+    color: var(--UCLA-blue);
+    text-decoration: underline;
 }

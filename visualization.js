@@ -1,10 +1,9 @@
 // https://www.chartjs.org/docs/latest/
 // task distribution chart
 var data = [57672, 31578, 18189];
-var colors = [];
-for (let i = 0; i < data.length; i++) {
-    colors.push(d3.interpolateTurbo(1 - i / data.length));
-}
+var colors = ['rgb(255, 99, 132)',
+'rgb(54, 162, 235)',
+'rgb(255, 205, 86)'];
 const task_data = {
     labels: [
         'Image MCQ',

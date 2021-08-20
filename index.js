@@ -34,6 +34,16 @@ const config = {
     data: data,
     // makes sure the chart doesn't get clipped when a section is hovered.
     options: {
+        plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    font: {
+                        size: 15
+                    }
+                }
+            },
+        },
         layout: {
             padding: {
                left: 5,
