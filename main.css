@@ -210,3 +210,10 @@ strong {
     color: var(--UCLA-blue);
     text-decoration: underline;
 }
+
+
+#cc-img {
+    --width: 40%;
+    width: var(--width);
+    margin: 0 calc(calc(100% - var(--width)) / 2);
+}
