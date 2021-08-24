@@ -1,6 +1,6 @@
 :root {
     --nav-font: Arial, Helvetica, sans-serif; 
-    --nav-height: 8vh;
+    --nav-height: 6vh;
     --UCLA-gold: #FFD100;
     --UCLA-blue: #2774AE;
     --UCLA-darkblue: #003B5C;
@@ -77,6 +77,12 @@ label {
     margin: -5vh 0;
 }
 #three-word-pie {
-    width: 70%;
-    margin: 0 15%;
+    /* width: 60%; */
+    max-height: 20em;
+    margin: 0 10%;
+}
+
+#wordcloud {
+    /* width: 60%; */
+    max-height: 20em;
 }

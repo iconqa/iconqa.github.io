@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IconQA</title>
-    <link rel="icon" href="res/knowledge-icon.png" type="image/icon type">    <link rel="stylesheet" href="visualization.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="res/knowledge-icon.png" type="image/icon type">    
+    <link rel="stylesheet" href="css/visualization.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://d3js.org/d3-color.v1.min.js"></script>
     <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="visualization.js" defer></script>
+    <script src="javascript/visualization.js" defer></script>
 </head>
 <body>
     <div id="nav">
@@ -34,7 +35,7 @@
         <div class="section">
             <h1>Task Distribution</h1>
             <div>
-                The IconQA dataset consists of 3 different tasks:
+                The IconQA dataset consists of 3 different sub-tasks:
                 <ul>
                     <li>Image MCQ: choose from 2-5 image choices</li>
                     <li>Text MCQ: choose from 2-5 text choices</li>
@@ -81,13 +82,13 @@
                 <div class="col">
                     <label>
                         <img src="res/three-word-pie.png" id="three-word-pie">
-                        Most Frequent First 3 Words in the Questions
+                        <p>Most Frequent First 3 Words in the Questions</p>
                     </label>
                 </div>
                 <div class="col">
                     <label>
                         <img src="res/wordcloud.png" id="wordcloud">
-                        Most Freqent Words in the Questions
+                        <p>Most Freqent Words in the Questions</p>
                     </label>
                 </div>
             </div>

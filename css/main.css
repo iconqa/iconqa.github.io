@@ -1,7 +1,7 @@
 /* some constants used throughout the website*/
 :root {
     --nav-font: Arial, Helvetica, sans-serif; 
-    --nav-height: 8vh;
+    --nav-height: 6vh;
     --UCLA-gold: #FFD100;
     --UCLA-blue: #2774AE;
     --UCLA-darkblue: #003B5C;
@@ -17,10 +17,21 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.2em;
+    line-height: 125%;
 }
 a {
     color: black;
     text-decoration: none;
+}
+a:focus, a:hover {
+    color: #005587;
+    text-decoration: underline;
+}
+a.hover {
+    text-decoration: none;
+}
+a.hover:hover {
+    text-decoration: underline;
 }
 hr {
     width: 75%;
@@ -112,8 +123,10 @@ strong {
     font-size: 3em;
 }
 #subtitle-text {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
+    line-height: 125%;
+    margin: -0.5em;
 }
 
 /* change this to adjust the vertical position of the title*/
@@ -142,7 +155,8 @@ strong {
     margin-bottom: 20px;
 }
 .example-img {
-    width: 15vw;
+    /* width: 15vw; */
+    width: 100%;
 }
 
 /* makes its children independent columns on the same row */
@@ -154,10 +168,10 @@ strong {
     align-items: center;
 }
 #overview-left {
-    width: 50%;
+    width: 70%;
 }
 #overview-right {
-    width: 40%;
+    width: 35%;
 }
 
 /* not very important. Tried to make the website responsive */
@@ -207,8 +221,9 @@ strong {
 }
 
 .ext-link {
-    color: var(--UCLA-blue);
-    text-decoration: underline;
+    /* color: var(--UCLA-blue); */
+    color: #007bff;
+    /* text-decoration: underline; */
 }
 
 

@@ -2,7 +2,8 @@
 #nav {
     width: 96%;
     height: var(--nav-height);
-    background-color: var(--nav-darkblue);
+    /* background-color: var(--nav-darkblue); */
+    background-color: #212529;
     position: fixed;
     top: 0;
     z-index: 10;

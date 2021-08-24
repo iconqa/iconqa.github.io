@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IconQA</title>
     <link rel="icon" href="res/knowledge-icon.png" type="image/icon type">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="index.js" defer></script>
+    <script src="javascript/index.js" defer></script>
 </head>
 <body>
     <div id="nav">
@@ -39,9 +39,8 @@
             <p id="title-text">IconQA</p>
         </div>
         <p id="subtitle-text">
-            A New Benchmark for <br> 
-            Abstract Diagram Understanding and <br> 
-            Visual Language Reasoning
+            A New Benchmark for Abstract Diagram Understanding<br> 
+            and Visual Language Reasoning
         </p>
         <!-- raise the title and subtitle up a little bit -->
         <p id="title-padding-bottom">&nbsp;</p>
@@ -55,11 +54,9 @@
             <div id="about" class="anchor"></div>
             <h1>What is IconQA?</h1>
             <div id="example-box">
-                <img class="example-img" src="res/example1.png" alt="example1.png"/>
-                <img class="example-img" src="res/example2.png" alt="example2.png"/>
-                <img class="example-img" src="res/example3.png" alt="example3.png"/>
+                <img class="example-img" src="res/iconqa_examples.png" alt="iconqa_examples.png"/>
             </div>
-            <p>Current visual question answering (VQA) tasks mainly consider answering 
+            <p style="line-height: 150%">Current visual question answering (VQA) tasks mainly consider answering 
                 human-annotated questions for natural images in the daily-life context. 
                 In this work, we propose a new challenging benchmark, icon question 
                 answering (IconQA), which aims to highlight the importance of 
@@ -125,15 +122,15 @@
         <div class="section">
             <div id="icon645" class="anchor"></div>
             <h1>Icon645</h1>
-            <div class="col-wrapper">
-                <div class="col">
+            <!-- <div class="col-wrapper"> -->
+            <div >
+                <!-- <div class="col"> -->
                     <img src="res/icon645.png">
-                </div>
-                <div class="col">
+                <!-- </div> -->
+                <!-- <div class="col"> -->
                     <p>
                         In addition to IconQA, we also present Icon645,
-                        a dataset of icons for training abstract image 
-                        classifiers
+                        a large-scale dataset of icons that cover a wide range of objects:
                     </p>
                     <ul>
                         <li><strong>645,687</strong> colored icons</li>
@@ -143,7 +140,7 @@
                         Check out the dataset 
                         <a href="https://github.com/lupantech/IconQA" target="blank" class="ext-link">here</a>.
                     </p>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         <hr>
@@ -151,7 +148,9 @@
             <div id="download" class="anchor"></div>
             <h1>Download</h1>
             <p>
-                Our dataset is distributed under the CC BY-NC-SA (Attribution-NonCommercial-ShareAlike) license, 
+                Our dataset is distributed under the 
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank" class="ext-link">CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)</a> license, 
+
                 which allows anyone to use our dataset for free under the following terms:
             </p>
             <ul>
@@ -182,7 +181,7 @@
                 <br>&emsp; title = {IconQA: A New Dataset for Abstract Diagram Understanding and Visual Language Reasoning},
                 <br>&emsp; author = {Lu, Pan and Qiu, Liang and Chen, Jiaqi and Xia, Tony and Zhao, Yizhou and Zhang, Wei and Yu, Zhou and Liang, Xiaodan and Zhu, Song-Chun},
                 <br>&emsp; booktitle = {Submitted to the 35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks},
-                <br>&emsp; year = {2021}g
+                <br>&emsp; year = {2021}
                 <br>}
             </p>
         </div>
