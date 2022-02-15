@@ -23,6 +23,8 @@
             <a class="nav-button" href="#overview">Overview</a>
             <a class="nav-button" href="#icon645">Icon645</a>
             <a class="nav-button" href="#download">Download</a>
+            <a class="nav-button" href="#citation">Pager</a>
+            <a class="nav-button" href="#citation">Code</a>
             <a class="nav-button" href="#citation">Citation</a>
             <a class="nav-button" href="explore.html">Explore</a>
             <a class="nav-button" href="visualization.html">Visualizations</a>
@@ -41,7 +43,12 @@
         <p id="subtitle-text">
             A New Benchmark for Abstract Diagram Understanding<br> 
             and Visual Language Reasoning
+            <br><br>
+            (NeurIPS 2021)
         </p>
+        <!-- <p id="subtitle-text">
+            (NeurIPS 2021)
+        </p> -->
         <!-- raise the title and subtitle up a little bit -->
         <p id="title-padding-bottom">&nbsp;</p>
     </div>
@@ -87,9 +94,9 @@
                     </ul>
                     <p>There are three different sub-tasks in IconQA:</p>
                     <ul>
-                        <li>57,672 image choice MC questions</li>
-                        <li>31,578 text choice MC questions</li>
-                        <li>18,189 fill-in-the-blank questions</li>
+                        <li>57,672 multi-image-choice questions</li>
+                        <li>31,578 multi-text-choice questions</li>
+                        <li>18,189 filling-in-the-blank questions</li>
                     </ul>
                     <p>
                         The IconQA dataset can be accessed <a href="https://github.com/lupantech/IconQA" target="blank" class="ext-link">here</a>.
@@ -162,8 +169,14 @@
                 If you agree with the terms listed above, you can download our datasets below:
             </p>
             <ul>
-                <li><a href="https://iconqa2021.s3.us-west-1.amazonaws.com/iconqa.zip" class="ext-link">IconQA</a></li>
-                <li><a href="https://iconqa2021.s3.us-west-1.amazonaws.com/icon645.zip" class="ext-link">Icon645</a></li>
+                <li>
+                    <a href="https://iconqa2021.s3.us-west-1.amazonaws.com/iconqa.zip" class="ext-link">IconQA</a> (S3) or
+                    <a href="https://drive.google.com/file/d/1Xqdt1zMcMZU5N_u1SAIjk-UAclriynGx" class="ext-link">IconQA</a> (Google Drive) 
+                </li>
+                <li>
+                    <a href="https://iconqa2021.s3.us-west-1.amazonaws.com/iconqa_data.zip" class="ext-link">Icon645</a> (S3) or
+                    <a href="https://drive.google.com/file/d/1AsqzjBjgJedgnVAOpYA9WRfMN5k6w9an" class="ext-link">Icon645</a> (Google Drive) 
+                </li>
             </ul>
             <p>
                 Or check out our <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">github repository</a>.
@@ -171,6 +184,36 @@
             <!-- <img src="res/ccbyncsa.png" id="cc-img"> -->
 
         </div>
+
+        <hr>
+        <div class="section">
+            <div id="paper" class="anchor"></div>
+            <h1>Paper</h1>
+            <p style="line-height: 150%">
+                <a style = "font-weight: 600">
+                IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning
+                </a><br>
+                Pan Lu, Liang Qiu, Jiaqi Chen, Tony Xia, Yizhou Zhao, Wei Zhang, Zhou Yu, Xiaodan Liang, Song-Chun Zhu<br>
+                The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks, 2021<br>
+                <a href="https://arxiv.org/abs/2110.13214" class="ext-link" target="blank">Paper</a> /
+                <a href="http://lupantech.github.io/papers/acl21_intergps.pdf" class="ext-link" target="blank">PDF</a> /
+                <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">Code</a>
+            </p>
+            <p>
+                <a href="http://lupantech.github.io/papers/neurips21_iconqa.pdf" class="ext-link" target="blank">
+                    <img src="./iconqa_thumbnail.png" style="width: 100%;">
+                </a>
+            </p>
+        </div>
+
+    
+        <hr>
+        <div class="section">
+            <div id="code" class="anchor"></div>
+            <h1>Code</h1>
+            View on the <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">github repository</a>.
+        </div>
+
         <hr>
         <div class="section">
             <div id="citation" class="anchor"></div>
@@ -180,7 +223,7 @@
                 @inproceedings{lu2021iconqa,
                 <br>&emsp; title = {IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning},
                 <br>&emsp; author = {Lu, Pan and Qiu, Liang and Chen, Jiaqi and Xia, Tony and Zhao, Yizhou and Zhang, Wei and Yu, Zhou and Liang, Xiaodan and Zhu, Song-Chun},
-                <br>&emsp; booktitle = {Submitted to the 35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks},
+                <br>&emsp; booktitle = {The 35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks},
                 <br>&emsp; year = {2021}
                 <br>}
             </p>

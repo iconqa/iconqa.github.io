@@ -15,7 +15,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 a {
     color: black;
@@ -40,6 +40,7 @@ input[type=button] {
     width: 5vw;
     height: 3vh;
     border-radius: 5px;
+    font-size: 1.0em;
 }
 input[type=button]:hover {
     background: var(--UCLA-gold);
