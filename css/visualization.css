@@ -80,15 +80,17 @@ label {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 /* each column of col-wrapper */
 .col {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .visual {

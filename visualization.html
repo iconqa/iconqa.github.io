@@ -49,20 +49,33 @@
                 </ul>
                 <p>
                 The IconQA dataset involves questions that require a variety of 
-                perceptual and cognitive skills.
+                cognitive reasoning and arithmetic reasoning types. We group these reasoning skills into 13 categories: 
+                Geometry,
+                Counting,
+                Comparing,
+                Spatial,
+                Scene,
+                Pattern,
+                Time,
+                Fraction,
+                Estimation,
+                Algebra,
+                Measurement,
+                Commonsense, and
+                Probability.
                 </p>
             </div>
             <div class="col-wrapper">
-                <div class="col">
+                <div class="col" style="width: 48%;">
                     <label>
                         <canvas id="task-pie-chart" class="visual"></canvas>
-                        Task Distribution
+                        Task distribution.
                     </label>
                 </div>
-                <div class="col">
+                <div class="col" style="width: 48%;">
                     <label>
                         <canvas id="skill-pie-chart" class="visual"></canvas>
-                        Skill Distribution
+                        Skill distribution.
                     </label>
                 </div>
             </div>
@@ -83,20 +96,20 @@
             <div >
                 <p>
                     The chart on the left shows the most common three-word combinations 
-                    that start the sentences.
+                    that start the sentences. The chart on the right shows the most freqent words in the questions.
                 </p>
             </div>
             <div class="col-wrapper">
                 <div class="col">
                     <label>
                         <img src="res/three-word-pie.png" id="three-word-pie">
-                        <p>Most Frequent First 3 Words in the Questions</p>
+                        <p>Most frequent first 3 words in the questions.</p>
                     </label>
                 </div>
                 <div class="col">
                     <label>
                         <img src="res/wordcloud.png" id="wordcloud">
-                        <p>Most Freqent Words in the Questions</p>
+                        <p>Most freqent words in the questions.</p>
                     </label>
                 </div>
             </div>
