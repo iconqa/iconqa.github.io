@@ -5,6 +5,8 @@
     --UCLA-blue: #2774AE;
     --UCLA-darkblue: #003B5C;
     --nav-darkblue: #05004a;
+    --body-font: #212529;
+    --heading: #1859c2;
 }
 html {
     overflow-x: hidden;
@@ -14,11 +16,21 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--body-font)
 }
+
+/* element: paragraphs in the body text */
+p {
+    line-height: 150%;
+    font-size: 18px;
+}
+
 a {
     color: black;
     text-decoration: none;
+    font-size: 18px;
 }
 hr {
     width: 45%;
@@ -28,12 +40,18 @@ hr {
 ul {
     margin: 0;
 }
+/* list */
 li {
-    margin-top: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
+
 h1 {
     margin-top: 0;
     /* text-align: center; */
+    color: var(--heading);
 }
 img {
     max-width: 100%;
@@ -66,7 +84,7 @@ label {
 
 /* each column of col-wrapper */
 .col {
-    width: 48%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;

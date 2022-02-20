@@ -6,6 +6,8 @@
     --UCLA-blue: #2774AE;
     --UCLA-darkblue: #003B5C;
     --nav-darkblue: #05004a;
+    --body-font: #212529;
+    --heading: #1859c2;
 }
 html {
     overflow-x: hidden;
@@ -15,11 +17,23 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--body-font)
 }
 a {
     color: black;
     text-decoration: none;
+    font-size: 18px;
+}
+p {
+    line-height: 150%;
+    font-size: 18px;
+}
+/* block: heading in the paragraph */
+h1 {
+    /* color: var(--UCLA-blue); */
+    color: var(--heading);
 }
 hr {
     width: 45%;
@@ -40,7 +54,7 @@ input[type=button] {
     width: 5vw;
     height: 3vh;
     border-radius: 5px;
-    font-size: 1.0em;
+    font-size: 0.8em;
 }
 input[type=button]:hover {
     background: var(--UCLA-gold);

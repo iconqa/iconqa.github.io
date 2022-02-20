@@ -6,9 +6,9 @@ var colors = ['rgb(255, 99, 132)',
 'rgb(255, 205, 86)'];
 const task_data = {
     labels: [
-        'Image MCQ',
-        'Text MCQ',
-        'Fill-in-the-blank'
+        'Choose-img',
+        'Choose-txt',
+        'Fill-in-blank'
     ],
     datasets: [{
         label: 'Task Distr.',

@@ -14,18 +14,21 @@
 <body>
     <div id="nav">
         <div id="icon">
-            <img src="res/knowledge-icon.png" id="nav-icon">
-            <p>IconQA</p>
+            <img src="res/knowledge-icon.png" id="nav-icon" style="max-width: 1500%;">
+            <!-- <p style="font-size: 24px;">IconQA</p> -->
+            <a class="nav-button" href="#" style="margin-left: 2px; font-size: 24px">IconQA</a>
         </div>
         <div>
             <a class="nav-button" href="#home">Home</a>
-            <a class="nav-button" href="#about">About</a>
-            <a class="nav-button" href="#overview">Overview</a>
+            <!-- <a class="nav-button" href="#about">About</a> -->
+            <a class="nav-button" href="#dataset">Dataset</a>
             <a class="nav-button" href="#icon645">Icon645</a>
             <a class="nav-button" href="#download">Download</a>
-            <a class="nav-button" href="#citation">Paper</a>
-            <a class="nav-button" href="#citation">Code</a>
+            <a class="nav-button" href="#paper">Paper</a>
+            <a class="nav-button" href="#code">Code</a>
             <a class="nav-button" href="#citation">Citation</a>
+            <a class="nav-button" href="#authors">Authors</a>
+            <a class="nav-button" href="#contact">Contact</a>
             <a class="nav-button" href="explore.html">Explore</a>
             <a class="nav-button" href="visualization.html">Visualizations</a>
         </div>
@@ -61,7 +64,7 @@
             <div id="about" class="anchor"></div>
             <h1>What is IconQA?</h1>
             <div id="example-box">
-                <img class="example-img" src="res/iconqa_examples.png" alt="iconqa_examples.png"/>
+                <img class="example-img" src="res/iconqa_examples.png" alt="iconqa_examples.png">
             </div>
             <p style="line-height: 150%">Current visual question answering (VQA) tasks mainly consider answering 
                 human-annotated questions for natural images in the daily-life context. 
@@ -80,77 +83,111 @@
             </p>
 
         </div>
-        <hr>
+        <!-- <hr> -->
         <div class="section">
-            <div id="overview" class="anchor"></div>
-            <h1>Overview</h1>
-            <div class="makecol">
-                <div id="overview-left">
-                    <p>IconQA provides diverse visual question answering questions that require:</p>
-                    <ul>
-                        <li>basic common sense knowledge</li>
-                        <li>comprehensive visual reasoning skills </li>
-                        <li>abstract diagram recognition </li>
-                    </ul>
-                    <p>There are three different sub-tasks in IconQA:</p>
-                    <ul>
-                        <li>57,672 multi-image-choice questions</li>
-                        <li>31,578 multi-text-choice questions</li>
-                        <li>18,189 filling-in-the-blank questions</li>
-                    </ul>
-                    <p>
-                        The IconQA dataset can be accessed <a href="https://github.com/lupantech/IconQA" target="blank" class="ext-link">here</a>.
-                    </p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Tasks</th><th>Train</th><th>Validation</th><th>Test</th><th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Multi-image-choice</td><td>34,603</td><td>11,535</td><td>11,535</td><td>57,672</td>
-                            </tr>
-                            <tr>
-                                <td>Multi-text-choice</td><td>18,946</td><td>6,316</td><td>6,316</td><td>31,578</td>
-                            </tr>
-                            <tr>
-                                <td>Filling-in-the-blank</td><td>10,913</td><td>3,638</td><td>3,638</td><td>18,189</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="overview-right">
-                    <canvas id="task-pie-chart"></canvas>
-                </div>
+            <div id="dataset" class="anchor"></div>
+            <h1>IconQA Dataset</h1>
+            <!-- <div class="makecol">
+                <div id="dataset-left"> -->
+            <p>There are three different sub-tasks in IconQA:</p>
+            <!-- <ul>
+                <li>57,672 multi-image-choice questions</li>
+                <li>31,578 multi-text-choice questions</li>
+                <li>18,189 filling-in-the-blank questions</li>
+            </ul> -->
+            <!-- <p>
+                The IconQA dataset can be accessed <a href="https://github.com/lupantech/IconQA" target="blank" class="ext-link">here</a>.
+            </p> -->
+            <table id="tasks">
+                <tr>
+                    <th>Sub-tasks</th>
+                    <th>Total</th>
+                    <th>Train</th>
+                    <th>Val</th>
+                    <th>Test</th>
+                </tr>
+                <tr>
+                    <td>Multi-image-choice</td>
+                    <td>57,672</td>
+                    <td>34,603</td>
+                    <td>11,535</td>
+                    <td>11,535</td>
+                </tr>
+                <tr>
+                    <td>Multi-text-choice</td>
+                    <td>31,578</td>
+                    <td>18,946</td>
+                    <td>6,316</td>
+                    <td>6,316</td>
+                </tr>
+                <tr>
+                    <td>Filling-in-the-blank</td>
+                    <td>18,189</td>
+                    <td>10,913</td>
+                    <td>3,638</td>
+                    <td>3,638</td>
+                </tr>
+            </table>
+
+            <p>IconQA provides diverse visual question answering questions that require:</p>
+            <ul>
+                <li>abstract diagram recognition </li>
+                <li>comprehensive visual reasoning skills </li>
+                <li>basic common sense knowledge</li>
+            </ul>
+
+            <p>
+            Some examples in the IconQA dataset are shown below: 
+            </p>
+            <div id="example-box">
+                <img class="example-img" src="res/more_examples.png" alt="iconqa_examples.png"/>
             </div>
+
+                <!-- </div> -->
+                <!-- <div id="overview-right">
+                    <canvas id="task-pie-chart"></canvas>
+                </div> -->
+            <!-- </div> -->
         </div>
-        <hr>
+
+        <p>
+            For more details, you can explore the datatset and check the visualizations here: 
+            <a class="ext-link" href="https://iconqa.github.io/explore.html">Explore</a> and 
+            <a class="ext-link" href="https://iconqa.github.io/visualization.html">Visualizations</a>.
+        </p>
+
+        <!-- <hr> -->
         <div class="section">
             <div id="icon645" class="anchor"></div>
-            <h1>Icon645</h1>
-            <!-- <div class="col-wrapper"> -->
+            <h1>Icon645 Dataset</h1>
             <div >
-                <!-- <div class="col"> -->
-                    <img src="res/icon645.png">
-                <!-- </div> -->
-                <!-- <div class="col"> -->
-                    <p>
-                        In addition to IconQA, we also present Icon645,
-                        a large-scale dataset of icons that cover a wide range of objects:
-                    </p>
-                    <ul>
-                        <li><strong>645,687</strong> colored icons</li>
-                        <li><strong>377</strong> different icon classes</li>
-                    </ul>
-                    <p>
-                        Check out the dataset 
-                        <a href="https://github.com/lupantech/IconQA" target="blank" class="ext-link">here</a>.
-                    </p>
-                <!-- </div> -->
+                <div id="example-box">
+                    <img class="example-img" src="res/icon645.png" alt="iconqa_examples.png">
+                </div>
+                <p>
+                    In addition to IconQA, we also present Icon645,
+                    a large-scale dataset of icons that cover a wide range of objects:
+                </p>
+                <ul>
+                    <li><strong>645,687</strong> colored icons</li>
+                    <li><strong>377</strong> different icon classes</li>
+                </ul>
+                <p>
+                    These collected icon classes are frequently mentioned in the IconQA questions. 
+                    In this work, we use the icon data to <strong>pre-train</strong> backbone networks 
+                    on the icon lassification task in order to extract semantic representations from 
+                    abstract diagrams in IconQA. On top of pre-training encoders, the large-scale icon 
+                    data could also contribute to open research on <strong>abstract aesthetics</strong> 
+                    and <strong>symbolic visual understanding</strong>.
+                </p>
+                <!-- <p>
+                    Check out the dataset 
+                    <a href="https://github.com/lupantech/IconQA" target="blank" class="ext-link">here</a>.
+                </p> -->
             </div>
         </div>
-        <hr>
+
+        <!-- <hr> -->
         <div class="section">
             <div id="download" class="anchor"></div>
             <h1>Download</h1>
@@ -178,21 +215,20 @@
                     <a href="https://drive.google.com/file/d/1AsqzjBjgJedgnVAOpYA9WRfMN5k6w9an" class="ext-link">Icon645</a> (Google Drive) 
                 </li>
             </ul>
-            <p>
+            <!-- <p>
                 Or check out our <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">github repository</a>.
-            </p>
+            </p> -->
             <!-- <img src="res/ccbyncsa.png" id="cc-img"> -->
-
         </div>
 
-        <hr>
+        <!-- <hr> -->
         <div class="section">
             <div id="paper" class="anchor"></div>
             <h1>Paper</h1>
-            <p style="line-height: 150%">
-                <a style = "font-weight: 600">
+            <p>
+                <papername>
                 IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning
-                </a><br>
+                </papername><br>
                 Pan Lu, Liang Qiu, Jiaqi Chen, Tony Xia, Yizhou Zhao, Wei Zhang, Zhou Yu, Xiaodan Liang, Song-Chun Zhu<br>
                 The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks, 2021<br>
                 <a href="https://arxiv.org/abs/2110.13214" class="ext-link" target="blank">Paper</a> /
@@ -201,37 +237,167 @@
             </p>
             <p>
                 <a href="http://lupantech.github.io/papers/neurips21_iconqa.pdf" class="ext-link" target="blank">
-                    <img src="./iconqa_thumbnail.png" style="width: 100%;">
+                    <img src="./res/iconqa_thumbnail.png" style="width: 100%;">
                 </a>
             </p>
         </div>
 
     
-        <hr>
+        <!-- <hr> -->
         <div class="section">
             <div id="code" class="anchor"></div>
             <h1>Code</h1>
+            <p>
             View on the <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">github repository</a>.
+            </p>
         </div>
 
-        <hr>
+        <!-- <hr> -->
         <div class="section">
             <div id="citation" class="anchor"></div>
             <h1>Citation</h1>
+            <p>
             If the paper or the dataset inspires you, please cite us:
+            </p>
             <p class="bibtax">
                 @inproceedings{lu2021iconqa,
                 <br>&emsp; title = {IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning},
                 <br>&emsp; author = {Lu, Pan and Qiu, Liang and Chen, Jiaqi and Xia, Tony and Zhao, Yizhou and Zhang, Wei and Yu, Zhou and Liang, Xiaodan and Zhu, Song-Chun},
-                <br>&emsp; booktitle = {The 35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks},
+                <br>&emsp; booktitle = {The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks},
                 <br>&emsp; year = {2021}
                 <br>}
             </p>
         </div>
+
+    <!-- Authors -->
+    <div class="section" id="authors"  style="align-content: center">
+        <h1>Authors</h1>
+        <div style="text-align: center; width: 100%; padding-top: 1em;">
+            <div class="profile">
+                <a href="https://lupantech.github.io/">
+                    <img class="profile-img" src="./img/panlu.jpg">
+                    <p>Pan Lu<sup>1</sup></p>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="https://www.lqiu.info/">
+                    <img class="profile-img" src="./img/liangqiu.jpg">
+                    <p>Liang Qiu<sup>1</sup></p>
+                </a>
+            </div>
+
+            <div class="profile">
+                <a href="https://scholar.google.com/citations?user=UCKjK3cAAAAJ">
+                    <img class="profile-img" src="./img/jiaqi.jpeg">
+                    <p>Jiaqi Chen<sup>4</sup></p>
+                </a>
+            </div>
+
+            <div class="profile">
+                <a href="https://tonyxia2001.github.io/">
+                    <img class="profile-img" src="./img/tony.jpeg">
+                    <p>Tony Xia<sup>1</sup></p>
+                </a>
+            </div>
+
+            <div class="profile">
+                <a href="https://www.linkedin.com/in/yizhou-zhao-8131ba133/">
+                    <img class="profile-img" src="./img/yzzhao.jpg">
+                    <p>Yizhou Zhao<sup>1</sup></p>
+                </a>
+            </div>
+            <br>
+
+            <div class="profile">
+                <a href="https://weizhangltt.github.io/">
+                    <img class="profile-img" src="./img/weizhang.jpg">
+                    <p>Wei Zhang<sup>2</sup></p>
+                </a>
+            </div>
+
+            <div class="profile">
+                <a href="https://www.cs.columbia.edu/~zhouyu/">
+                    <img class="profile-img" src="./img/zhou.jpg">
+                    <p>Zhou Yu<sup>3</sup></p>
+                </a>
+            </div>
+
+            <div class="profile">
+                <a href="https://lemondan.github.io/">
+                    <img class="profile-img" src="./img/xiaodan.png">
+                    <p>Xiaodan Liang<sup>4</sup></p>
+                </a>
+            </div>
+            <div class="profile" style="">
+                <a href="http://www.stat.ucla.edu/~sczhu/">
+                    <img class="profile-img" src="./img/zhu.jpg">
+                    <p>Song-Chun Zhu<sup>1</sup></p>
+                </a>
+            </div>
+        </div>
+        <div style="text-align:center; display: inline-block; width: 100%; margin-top: 0">
+            <p>
+                <sup>1</sup>Center for Vision, Cognition, Learning, and Autonomy (VCLA), UCLA <br>
+                <sup>2</sup>School of Computer Science and Technology, East China Normal University<br>
+                <sup>3</sup>Computer Science Department, Columbia University<br>
+                <sup>4</sup>School of Intelligent Systems Engineering, Sun Yat-sen University
+            </p>
+        </div>
     </div>
 
+    <!-- Contact -->
+    <div class="section" id="contact">
+        <h1>Contact</h1>
+        <p>
+            Questions about IconQA, or want to get in touch? Contact Pan Lu at
+            <a href="https://lupantech.github.io/" target="blank" class="ext-link">the contact page</a>, or open up a pull request or issue on
+            <a href="https://github.com/lupantech/IconQA/issues" target="blank" class="ext-link">Github</a>.
+        </p>
+    </div>
+
+    <!-- Affiliation  -->
+    <div class="section" style="table-layout: auto;">
+        <center>
+        <table >
+            <tbody><tr>
+                <td>
+                <a href="https://vcla.stat.ucla.edu/index.html" target="_blank" rel="external">
+                    <img class="center-block" src="img/vcla.jpg" style="height:6em; max-width: 100%;"></a>
+                </td>
+                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                
+                <td>
+                <a href="https://www.ucla.edu/" target="_blank" rel="external">
+                    <img class="center-block" src="img/vcla.png" style="height:6em; max-width: 100%;"></a>
+                </td>
+                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+
+                <td>
+                <a href="http://www.sysu.edu.cn/en/index.htm"  target="blank" class="ext-link">
+                    <img class="center-block" src="img/ecnu.png" style="height:6em; max-width: 100%;">
+                </a>
+                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+
+                <td>
+                <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">
+                    <img class="center-block" src="img/columbia.png" style="height:6em; max-width: 100%;"></a>
+                </td>
+                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+
+                <td>
+                <a href="http://www.sysu.edu.cn/en/index.htm"  target="blank" class="ext-link">
+                    <img class="center-block" src="img/sysu.jpg" style="height:5em;  max-width: 100%;">
+                </a>
+                </td>
+            </tr></tbody>
+        </table><br>
+        </center>
+    </div>
+
+
+    </div>
     <!-- footer -->
-    <div id="footer">
+    <div id="footer" style="font-size: 12pt">
         © 2021 Center for Vision, Cognition, Learning, and Autonomy at UCLA
     </div>
 </body>

@@ -6,22 +6,44 @@
     --UCLA-blue: #2774AE;
     --UCLA-darkblue: #003B5C;
     --nav-darkblue: #05004a;
+    --body-font: #212529;
+    --heading: #1859c2;
 }
 
-/* styled tags that look decent */
 html {
     overflow-x: hidden;
     font-family: var(--nav-font);
 }
+
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 16px;
     line-height: 125%;
+    color: var(--body-font)
 }
+
+strong {
+    color: var(--body-font);
+}
+
+/* block: heading in the paragraph */
+h1 {
+    /* color: var(--UCLA-blue); */
+    color: var(--heading);
+}
+
+/* element: paragraphs in the body text */
+p {
+    line-height: 150%;
+    font-size: 18px;
+}
+
+/* links */
 a {
     color: black;
     text-decoration: none;
+    font-size: 18px;
 }
 a:focus, a:hover {
     color: #005587;
@@ -33,53 +55,48 @@ a.hover {
 a.hover:hover {
     text-decoration: underline;
 }
+
+/* block: paper title in the body text */
+papername {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* element: divider line */
 hr {
     width: 75%;
     color: silver;
     opacity: 0.5;
 }
+
 img {
     max-width: 100%;
 }
+
 ul {
     margin: 0;
 }
+
+/* list */
 li {
-    margin-top: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
-/* for the nice table on the home page */
-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 1 em;
-    font-family: sans-serif;
-    width: 30vw;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-thead tr {
-    background-color: var(--UCLA-darkblue);
-    color: #ffffff;
-    text-align: left;
-}
-th, td {
-    padding: 12px 10px;
-}
-tbody tr {
-    border-bottom: 1px solid #dddddd;
+/* body of the page */
+#body {
+    width: 60vw;
+    margin: auto;
 }
 
-tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-tbody tr:last-of-type {
-    border-bottom: 2px solid var(--UCLA-darkblue);
-}
-
-/* used only once on the home page */
-strong {
-    color: var(--UCLA-blue);
+/* section */
+.section {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 4px;
 }
 
 /* anchor tag for nav button scrolling */
@@ -90,7 +107,6 @@ strong {
     top: calc(-1 * var(--nav-height));
     height: 1px;
 }
-
 
 /* the banner */
 #title {
@@ -120,10 +136,10 @@ strong {
     align-items: center;
 }
 #title-text {
-    font-size: 3em;
+    font-size: 50px;
 }
 #subtitle-text {
-    font-size: 1.5em;
+    font-size: 30px;
     text-align: center;
     line-height: 125%;
     margin: -0.5em;
@@ -134,18 +150,6 @@ strong {
     font-size: 1.5em;
 }
 
-/* body of the page */
-#body {
-    width: 60vw;
-    margin: auto;
-}
-
-.section {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 50px;
-}
-
 /* shows three examples on the home page */
 #example-box {
     display: flex;
@@ -154,9 +158,12 @@ strong {
     align-items: center;
     margin-bottom: 20px;
 }
+
+/* data example images */
 .example-img {
     /* width: 15vw; */
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 /* makes its children independent columns on the same row */
@@ -197,19 +204,6 @@ strong {
     }
 }
 
-/* #task-pie-chart {
-    
-} */
-.col-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.col {
-    width: 48%;
-}
-
 .bibtax {
     padding-left: 1em;
     padding-top: 1em;
@@ -217,7 +211,7 @@ strong {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 16px;
 }
 
 .ext-link {
@@ -231,3 +225,88 @@ strong {
     width: var(--width);
     margin: 0 calc(calc(100% - var(--width)) / 2);
 }
+
+/* class: profile */
+.profile {
+    display: inline-block;
+    width: 180px;
+}
+
+/* class: profile image */
+.profile-img {
+    border-radius: 50%;
+    width:150px;
+}
+
+/* #task-pie-chart */
+.col-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    width: 48%;
+}
+
+/* Table for three sub-tasks */
+#tasks {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top:1em;
+    margin-bottom:2em;
+  }
+  
+  /*table tile*/
+  #tasks th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--UCLA-darkblue);
+    color: white;
+  }
+
+  #tasks td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tasks tr:nth-child(even){background-color: #f5f5f5;}
+
+  #tasks tr:hover {background-color: #ddd;}
+
+
+/* for the nice table on the home page */
+/* table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1 em;
+    font-family: sans-serif;
+    width: 30vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+} */
+/* thead tr {
+    background-color: var(--UCLA-darkblue);
+    color: #ffffff;
+    text-align: left;
+} */
+/* th, td {
+    padding: 12px 10px;
+} */
+/* tbody tr {
+    border-bottom: 1px solid #dddddd;
+} */
+/* tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+tbody tr:last-of-type {
+    border-bottom: 2px solid var(--UCLA-darkblue);
+} */
+
