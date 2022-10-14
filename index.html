@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="javascript/index.js" defer></script>
 </head>
+
 <body>
     <div id="nav">
         <div id="icon">
@@ -44,7 +46,7 @@
             <p id="title-text">IconQA</p>
         </div>
         <p id="subtitle-text">
-            A New Benchmark for Abstract Diagram Understanding<br> 
+            A New Benchmark for Abstract Diagram Understanding<br>
             and Visual Language Reasoning
             <br><br>
             (NeurIPS 2021)
@@ -66,19 +68,19 @@
             <div id="example-box">
                 <img class="example-img" src="res/iconqa_examples.png" alt="iconqa_examples.png">
             </div>
-            <p style="line-height: 150%">Current visual question answering (VQA) tasks mainly consider answering 
-                human-annotated questions for natural images in the daily-life context. 
-                In this work, we propose a new challenging benchmark, icon question 
-                answering (IconQA), which aims to highlight the importance of 
-                <strong> abstract diagram understanding </strong> and 
-                <strong>comprehensive cognitive reasoning </strong> 
-                in real-world diagram word problems. 
-                For this benchmark, we build up a large-scale 
-                IconQA dataset that consists of three sub-tasks: multi-image-choice, 
-                multi-text-choice, and filling-in-the-blank. Compared to existing VQA 
-                benchmarks, IconQA requires not only <strong>perception skills</strong> like object 
-                recognition and text understanding, but also diverse <strong>cognitive reasoning</strong> 
-                skills, such as geometric reasoning, commonsense reasoning, and 
+            <p style="line-height: 150%">Current visual question answering (VQA) tasks mainly consider answering
+                human-annotated questions for natural images in the daily-life context.
+                In this work, we propose a new challenging benchmark, icon question
+                answering (IconQA), which aims to highlight the importance of
+                <strong> abstract diagram understanding </strong> and
+                <strong>comprehensive cognitive reasoning </strong>
+                in real-world diagram word problems.
+                For this benchmark, we build up a large-scale
+                IconQA dataset that consists of three sub-tasks: multi-image-choice,
+                multi-text-choice, and filling-in-the-blank. Compared to existing VQA
+                benchmarks, IconQA requires not only <strong>perception skills</strong> like object
+                recognition and text understanding, but also diverse <strong>cognitive reasoning</strong>
+                skills, such as geometric reasoning, commonsense reasoning, and
                 arithmetic reasoning.
             </p>
 
@@ -137,19 +139,19 @@
             </ul>
 
             <p>
-            Some examples in the IconQA dataset are shown below: 
+                Some examples in the IconQA dataset are shown below:
             </p>
             <div id="example-box">
-                <img class="example-img" src="res/more_examples.png" alt="iconqa_examples.png"/>
+                <img class="example-img" src="res/more_examples.png" alt="iconqa_examples.png" />
             </div>
 
             <p>
-                For more details, you can explore the datatset and check the visualizations here: 
-                <a class="ext-link" href="https://iconqa.github.io/explore.html">Explore</a> and 
+                For more details, you can explore the datatset and check the visualizations here:
+                <a class="ext-link" href="https://iconqa.github.io/explore.html">Explore</a> and
                 <a class="ext-link" href="https://iconqa.github.io/visualization.html">Visualizations</a>.
             </p>
-                <!-- </div> -->
-                <!-- <div id="overview-right">
+            <!-- </div> -->
+            <!-- <div id="overview-right">
                     <canvas id="task-pie-chart"></canvas>
                 </div> -->
             <!-- </div> -->
@@ -158,7 +160,7 @@
         <div class="section">
             <div id="icon645" class="anchor"></div>
             <h1>Icon645 Dataset</h1>
-            <div >
+            <div>
                 <div id="example-box">
                     <img class="example-img" src="res/icon645.png" alt="iconqa_examples.png">
                 </div>
@@ -171,11 +173,11 @@
                     <li><strong>377</strong> different icon classes</li>
                 </ul>
                 <p>
-                    These collected icon classes are frequently mentioned in the IconQA questions. 
-                    In this work, we use the icon data to <strong>pre-train</strong> backbone networks 
-                    on the icon classification task in order to extract semantic representations from 
-                    abstract diagrams in IconQA. On top of pre-training encoders, the large-scale icon 
-                    data could also contribute to open research on <strong>abstract aesthetics</strong> 
+                    These collected icon classes are frequently mentioned in the IconQA questions.
+                    In this work, we use the icon data to <strong>pre-train</strong> backbone networks
+                    on the icon classification task in order to extract semantic representations from
+                    abstract diagrams in IconQA. On top of pre-training encoders, the large-scale icon
+                    data could also contribute to open research on <strong>abstract aesthetics</strong>
                     and <strong>symbolic visual understanding</strong>.
                 </p>
                 <!-- <p>
@@ -190,27 +192,34 @@
             <div id="download" class="anchor"></div>
             <h1>Download</h1>
             <p>
-                Our dataset is distributed under the 
-                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank" class="ext-link">CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)</a> license, 
+                Our dataset is distributed under the
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="blank" class="ext-link">CC BY-NC-SA
+                    (Attribution-NonCommercial-ShareAlike)</a> license,
 
                 which allows anyone to use our dataset for free under the following terms:
             </p>
             <ul>
-                <li>You must give appropriate credit, provide a link to the license, and indicate if changes were made.</li>
+                <li>You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+                </li>
                 <li>You must not use the material for commercial purposes.</li>
-                <li>If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
+                <li>If you remix, transform, or build upon the material, you must distribute your contributions under
+                    the same license as the original.</li>
             </ul>
             <p>
                 If you agree with the terms listed above, you can download our datasets below:
             </p>
             <ul>
                 <li>
-                    <a href="https://iconqa2021.s3.us-west-1.amazonaws.com/iconqa_data.zip" class="ext-link">IconQA</a> (S3) or
-                    <a href="https://drive.google.com/file/d/1Xqdt1zMcMZU5N_u1SAIjk-UAclriynGx" class="ext-link">IconQA</a> (Google Drive) 
+                    <a href="https://iconqa2021.s3.us-west-1.amazonaws.com/iconqa_data.zip" class="ext-link">IconQA</a>
+                    (S3) or
+                    <a href="https://drive.google.com/file/d/1Xqdt1zMcMZU5N_u1SAIjk-UAclriynGx"
+                        class="ext-link">IconQA</a> (Google Drive)
                 </li>
                 <li>
-                    <a href="https://iconqa2021.s3.us-west-1.amazonaws.com/icon645.zip" class="ext-link">Icon645</a> (S3) or
-                    <a href="https://drive.google.com/file/d/1AsqzjBjgJedgnVAOpYA9WRfMN5k6w9an" class="ext-link">Icon645</a> (Google Drive) 
+                    <a href="https://iconqa2021.s3.us-west-1.amazonaws.com/icon645.zip" class="ext-link">Icon645</a>
+                    (S3) or
+                    <a href="https://drive.google.com/file/d/1AsqzjBjgJedgnVAOpYA9WRfMN5k6w9an"
+                        class="ext-link">Icon645</a> (Google Drive)
                 </li>
             </ul>
             <!-- <p>
@@ -225,12 +234,15 @@
             <h1>Paper</h1>
             <p>
                 <papername>
-                IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning
+                    IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning
                 </papername><br>
-                Pan Lu, Liang Qiu, Jiaqi Chen, Tony Xia, Yizhou Zhao, Wei Zhang, Zhou Yu, Xiaodan Liang, Song-Chun Zhu<br>
-                The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks, 2021<br>
+                Pan Lu, Liang Qiu, Jiaqi Chen, Tony Xia, Yizhou Zhao, Wei Zhang, Zhou Yu, Xiaodan Liang, Song-Chun
+                Zhu<br>
+                The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks,
+                2021<br>
                 <a href="https://arxiv.org/abs/2110.13214" class="ext-link" target="blank">Paper</a> /
-                <a href="http://lupantech.github.io/papers/neurips21_iconqa.pdf" class="ext-link" target="blank">PDF</a> /
+                <a href="http://lupantech.github.io/papers/neurips21_iconqa.pdf" class="ext-link" target="blank">PDF</a>
+                /
                 <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">Code</a>
             </p>
             <p>
@@ -240,13 +252,14 @@
             </p>
         </div>
 
-    
+
         <!-- <hr> -->
         <div class="section">
             <div id="code" class="anchor"></div>
             <h1>Code</h1>
             <p>
-            View on the <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">github repository</a>.
+                View on the <a href="https://github.com/lupantech/IconQA" class="ext-link" target="blank">github
+                    repository</a>.
             </p>
         </div>
 
@@ -255,142 +268,147 @@
             <div id="citation" class="anchor"></div>
             <h1>Citation</h1>
             <p>
-            If the paper or the dataset inspires you, please cite us:
+                If the paper or the dataset inspires you, please cite us:
             </p>
-            <p class="bibtax">
-                @inproceedings{lu2021iconqa,
-                <br>&emsp; title = {IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning},
-                <br>&emsp; author = {Lu, Pan and Qiu, Liang and Chen, Jiaqi and Xia, Tony and Zhao, Yizhou and Zhang, Wei and Yu, Zhou and Liang, Xiaodan and Zhu, Song-Chun},
-                <br>&emsp; booktitle = {The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks},
-                <br>&emsp; year = {2021}
-                <br>}
-            </p>
+            <pre class="bibtax">
+@inproceedings{lu2021iconqa,
+    title = {IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning},
+    author = {Lu, Pan and Qiu, Liang and Chen, Jiaqi and Xia, Tony and Zhao, Yizhou and Zhang, Wei and Yu, Zhou and Liang, Xiaodan and Zhu, Song-Chun},
+    booktitle = {The 35th Conference on Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks},
+    year = {2021}
+}</pre>
         </div>
 
-    <!-- Authors -->
-    <div class="section" id="authors"  style="align-content: center">
-        <h1>Authors</h1>
-        <div style="text-align: center; width: 100%; padding-top: 1em;">
-            <div class="profile">
-                <a href="https://lupantech.github.io/">
-                    <img class="profile-img" src="./img/panlu.jpg">
-                    <p>Pan Lu<sup>1</sup></p>
-                </a>
-            </div>
-            <div class="profile">
-                <a href="https://www.lqiu.info/">
-                    <img class="profile-img" src="./img/liangqiu.jpg">
-                    <p>Liang Qiu<sup>1</sup></p>
-                </a>
-            </div>
+        <!-- Authors -->
+        <div class="section" id="authors" style="align-content: center">
+            <h1>Authors</h1>
+            <div style="text-align: center; width: 100%; padding-top: 1em;">
+                <div class="profile">
+                    <a href="https://lupantech.github.io/">
+                        <img class="profile-img" src="./img/panlu.jpg">
+                        <p>Pan Lu<sup>1</sup></p>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="https://www.lqiu.info/">
+                        <img class="profile-img" src="./img/liangqiu.jpg">
+                        <p>Liang Qiu<sup>1</sup></p>
+                    </a>
+                </div>
 
-            <div class="profile">
-                <a href="https://scholar.google.com/citations?user=UCKjK3cAAAAJ">
-                    <img class="profile-img" src="./img/jiaqi.jpeg">
-                    <p>Jiaqi Chen<sup>4</sup></p>
-                </a>
-            </div>
+                <div class="profile">
+                    <a href="https://scholar.google.com/citations?user=UCKjK3cAAAAJ">
+                        <img class="profile-img" src="./img/jiaqi.jpeg">
+                        <p>Jiaqi Chen<sup>4</sup></p>
+                    </a>
+                </div>
 
-            <div class="profile">
-                <a href="https://tonyxia2001.github.io/">
-                    <img class="profile-img" src="./img/tony.jpeg">
-                    <p>Tony Xia<sup>1</sup></p>
-                </a>
-            </div>
+                <div class="profile">
+                    <a href="https://tonyxia2001.github.io/">
+                        <img class="profile-img" src="./img/tony.jpeg">
+                        <p>Tony Xia<sup>1</sup></p>
+                    </a>
+                </div>
 
-            <div class="profile">
-                <a href="https://www.linkedin.com/in/yizhou-zhao-8131ba133/">
-                    <img class="profile-img" src="./img/yzzhao.jpg">
-                    <p>Yizhou Zhao<sup>1</sup></p>
-                </a>
-            </div>
-            <br>
+                <div class="profile">
+                    <a href="https://www.linkedin.com/in/yizhou-zhao-8131ba133/">
+                        <img class="profile-img" src="./img/yzzhao.jpg">
+                        <p>Yizhou Zhao<sup>1</sup></p>
+                    </a>
+                </div>
+                <br>
 
-            <div class="profile">
-                <a href="https://weizhangltt.github.io/">
-                    <img class="profile-img" src="./img/weizhang.jpg">
-                    <p>Wei Zhang<sup>2</sup></p>
-                </a>
-            </div>
+                <div class="profile">
+                    <a href="https://weizhangltt.github.io/">
+                        <img class="profile-img" src="./img/weizhang.jpg">
+                        <p>Wei Zhang<sup>2</sup></p>
+                    </a>
+                </div>
 
-            <div class="profile">
-                <a href="https://www.cs.columbia.edu/~zhouyu/">
-                    <img class="profile-img" src="./img/zhou.jpg">
-                    <p>Zhou Yu<sup>3</sup></p>
-                </a>
-            </div>
+                <div class="profile">
+                    <a href="https://www.cs.columbia.edu/~zhouyu/">
+                        <img class="profile-img" src="./img/zhou.jpg">
+                        <p>Zhou Yu<sup>3</sup></p>
+                    </a>
+                </div>
 
-            <div class="profile">
-                <a href="https://lemondan.github.io/">
-                    <img class="profile-img" src="./img/xiaodan.png">
-                    <p>Xiaodan Liang<sup>4</sup></p>
-                </a>
+                <div class="profile">
+                    <a href="https://lemondan.github.io/">
+                        <img class="profile-img" src="./img/xiaodan.png">
+                        <p>Xiaodan Liang<sup>4</sup></p>
+                    </a>
+                </div>
+                <div class="profile" style="">
+                    <a href="http://www.stat.ucla.edu/~sczhu/">
+                        <img class="profile-img" src="./img/zhu.jpg">
+                        <p>Song-Chun Zhu<sup>1</sup></p>
+                    </a>
+                </div>
             </div>
-            <div class="profile" style="">
-                <a href="http://www.stat.ucla.edu/~sczhu/">
-                    <img class="profile-img" src="./img/zhu.jpg">
-                    <p>Song-Chun Zhu<sup>1</sup></p>
-                </a>
+            <div style="text-align:center; display: inline-block; width: 100%; margin-top: 0">
+                <p>
+                    <sup>1</sup>Center for Vision, Cognition, Learning, and Autonomy (VCLA), UCLA <br>
+                    <sup>2</sup>School of Computer Science and Technology, East China Normal University<br>
+                    <sup>3</sup>Computer Science Department, Columbia University<br>
+                    <sup>4</sup>School of Intelligent Systems Engineering, Sun Yat-sen University
+                </p>
             </div>
         </div>
-        <div style="text-align:center; display: inline-block; width: 100%; margin-top: 0">
+
+        <!-- Contact -->
+        <div class="section" id="contact">
+            <h1>Contact</h1>
             <p>
-                <sup>1</sup>Center for Vision, Cognition, Learning, and Autonomy (VCLA), UCLA <br>
-                <sup>2</sup>School of Computer Science and Technology, East China Normal University<br>
-                <sup>3</sup>Computer Science Department, Columbia University<br>
-                <sup>4</sup>School of Intelligent Systems Engineering, Sun Yat-sen University
+                Questions about IconQA, or want to get in touch? Contact Pan Lu at
+                <a href="https://lupantech.github.io/" target="blank" class="ext-link">the contact page</a>, or open up
+                a pull request or issue on
+                <a href="https://github.com/lupantech/IconQA/issues" target="blank" class="ext-link">Github</a>.
             </p>
         </div>
-    </div>
 
-    <!-- Contact -->
-    <div class="section" id="contact">
-        <h1>Contact</h1>
-        <p>
-            Questions about IconQA, or want to get in touch? Contact Pan Lu at
-            <a href="https://lupantech.github.io/" target="blank" class="ext-link">the contact page</a>, or open up a pull request or issue on
-            <a href="https://github.com/lupantech/IconQA/issues" target="blank" class="ext-link">Github</a>.
-        </p>
-    </div>
+        <!-- Affiliation  -->
+        <div class="section" style="table-layout: auto;">
+            <center>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://vcla.stat.ucla.edu/index.html" target="_blank" rel="external">
+                                    <img class="center-block" src="img/vcla.jpg"
+                                        style="height:6em; max-width: 100%;"></a>
+                            </td>
+                            <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
 
-    <!-- Affiliation  -->
-    <div class="section" style="table-layout: auto;">
-        <center>
-        <table >
-            <tbody><tr>
-                <td>
-                <a href="https://vcla.stat.ucla.edu/index.html" target="_blank" rel="external">
-                    <img class="center-block" src="img/vcla.jpg" style="height:6em; max-width: 100%;"></a>
-                </td>
-                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
-                
-                <td>
-                <a href="https://www.ucla.edu/" target="_blank" rel="external">
-                    <img class="center-block" src="img/vcla.png" style="height:6em; max-width: 100%;"></a>
-                </td>
-                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                            <td>
+                                <a href="https://www.ucla.edu/" target="_blank" rel="external">
+                                    <img class="center-block" src="img/vcla.png"
+                                        style="height:6em; max-width: 100%;"></a>
+                            </td>
+                            <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
 
-                <td>
-                <a href="http://www.sysu.edu.cn/en/index.htm"  target="blank" class="ext-link">
-                    <img class="center-block" src="img/ecnu.png" style="height:6em; max-width: 100%;">
-                </a>
-                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                            <td>
+                                <a href="http://www.sysu.edu.cn/en/index.htm" target="blank" class="ext-link">
+                                    <img class="center-block" src="img/ecnu.png" style="height:6em; max-width: 100%;">
+                                </a>
+                            <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
 
-                <td>
-                <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">
-                    <img class="center-block" src="img/columbia.png" style="height:6em; max-width: 100%;"></a>
-                </td>
-                <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                            <td>
+                                <a href="http://www.zju.edu.cn/english/" target="_blank" rel="external">
+                                    <img class="center-block" src="img/columbia.png"
+                                        style="height:6em; max-width: 100%;"></a>
+                            </td>
+                            <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
 
-                <td>
-                <a href="http://www.sysu.edu.cn/en/index.htm"  target="blank" class="ext-link">
-                    <img class="center-block" src="img/sysu.jpg" style="height:5em;  max-width: 100%;">
-                </a>
-                </td>
-            </tr></tbody>
-        </table><br>
-        </center>
-    </div>
+                            <td>
+                                <a href="http://www.sysu.edu.cn/en/index.htm" target="blank" class="ext-link">
+                                    <img class="center-block" src="img/sysu.jpg" style="height:5em;  max-width: 100%;">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br>
+            </center>
+        </div>
 
 
     </div>
@@ -399,4 +417,5 @@
         © 2021 Center for Vision, Cognition, Learning, and Autonomy at UCLA
     </div>
 </body>
+
 </html>
